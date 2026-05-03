@@ -6,6 +6,8 @@ End-to-end data pipeline for processing Uber ride data using Azure services and 
 
 ![Architecture Diagram](https://raw.githubusercontent.com/Arun6552/Arun6552-Uber-Project-Data-Engineer-End-To-End/main/Uber_Project.svg)
 
+![Data Pipeline Architecture](https://raw.githubusercontent.com/Arun6552/Arun6552-Uber-Project-Data-Engineer-End-To-End/main/architecture.png)
+
 The project follows a **medallion architecture** pattern:
 
 1. **Web App** - FastAPI application generates synthetic Uber ride data
