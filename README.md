@@ -2,6 +2,18 @@
 
 End-to-end data pipeline for processing Uber ride data using Azure services and Apache Spark.
 
+## Architecture
+
+![Architecture Diagram](https://raw.githubusercontent.com/Arun6552/Arun6552-Uber-Project-Data-Engineer-End-To-End/main/Uber_Project.svg)
+
+The project follows a **medallion architecture** pattern:
+
+1. **Web App** - FastAPI application generates synthetic Uber ride data
+2. **Event Hub** - Real-time event streaming receives ride bookings
+3. **One Big Stream** - Apache Spark processes incoming events in real-time
+4. **Star Schema** - Data is organized into fact and dimension tables for analytics
+5. **GitHub** - Version control and collaboration
+
 ## Overview
 
 This project simulates Uber ride booking events and processes them through a real-time data pipeline:
